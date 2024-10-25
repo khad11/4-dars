@@ -1,0 +1,21 @@
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.masala11 {
+  background-color: aquamarine;
+}
+#resizableText {
+  font-size: 18px;
+}
+#coloredText {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
