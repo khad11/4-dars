@@ -128,6 +128,19 @@
 
 /* 19- MASALA */
 ////Bir nechta tab oynalari yarating. Foydalanuvchi har bir tabga bosganda tegishli mazmun ko'rsatilishi kerak.
+const tabButtons = document.querySelectorAll(".tabButton");
+const tabl = document.getElementById("tab1");
+const tab2 = document.getElementById("tab2");
+const tab3 = document.getElementById("tab3");
+
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    tabl.style.display = "none";
+    tab2.style.display = "none";
+    tab3.style.display = "none";
+    document.getElementById(button.dataset.target).style.display = "block";
+  });
+});
 
 /* 20- MASALA */
 ////Har bir tugma bosilganda matn rangi yoki fon rangi o'zgarib tursin.
